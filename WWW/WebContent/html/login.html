@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>用户登陆过页面</title>
+	<meta charset="UTF-8">
+	<style type="text/css">
+		.output{display: flex;flex-direction:row-reverse;margin-top: -30px;}
+		.output li{margin-left: 10px;position: relative;margin-right: 10px;}
+		.output .subnav{left:-999em;position: absolute;z-index: 1000;}
+		.output li:hover .subnav{position:absolute;left:-28px;top:25px;}
+		.btn{border-radius: 0.5em;
+			width:80px;height: 40px;
+			background-color: #00BFFF;
+			color: #c0c0c0;
+			cursor: pointer;
+			font-size: 18px;
+			margin-left: 100px;
+
+			}
+		h1{
+			font-size: 40px;
+			text-align: center;
+			color:black;
+			}
+		fieldset{
+			width:600px;
+			background-color: #f1f1f1;
+			border:none;
+			border-radius: 2px;
+			margin-bottom: 12px;
+			overflow: hidden;
+			padding: 0;
+
+
+		}
+		.fields{
+			background-color: #fff;
+			border:1px solid #eaeaea;
+			margin:.65em;
+			padding:.75em;
+			height:400px;
+		}
+		.fields .row{
+			margin:.5em 0;
+		
+			
+		}
+	
+	
+		.fields .check{ margin-left:20px;}
+		
+		.fields .yanzhenma{
+		display:inline-block;
+		vertical-align: center;
+		margin-top:10px;}
+		
+		label{
+			cursor: pointer;
+			display: inline-block;
+			padding:3px 6px;
+			text-align: right;
+			width:150px;
+			vertical-align: top;	
+			}
+		input ,select,button{
+			font-size: inherit;
+		} 
+		h2{background-color: #00BFFF;
+			margin-left:.65em;
+		}
+	
+
+	</style>
+</head>
+<body>
+<div class="container">
+<header role="banner">
+<h1>NBA那点事儿</h1>
+<ul class="output">
+	<li>
+			<a href="#">用户中心</a>
+			<ul class="subnav">
+				<li>头想</li>
+				<li>头想</li>
+				<li>头想</li>
+			</ul>
+
+	</li>
+    <li >
+			<a href="#">用户中心</a>
+			<ul class="subnav">
+				<li>头想</li>
+				<li>头想</li>
+				<li>头想</li>
+			</ul>
+    </li>
+    <li>
+			<a href="#">用户中心</a>
+			<ul class="subnav">
+				<li>头想</li>
+				<li>头想</li>
+				<li>头想</li>
+			</ul>
+
+	</li>
+    <li >
+			<a href="#">用户中心</a>
+			<ul class="subnav">
+				<li>头想</li>
+				<li>头想</li>
+				<li>头想</li>
+			</ul>
+    </li>
+
+</ul>
+<main role="main">
+	<form method="POST" action="/First/y">
+	<fieldset>
+		<h2 class="hdr-account">Account</h2>
+		<div class="fields">
+			<p class="row">
+		    	<label for="user">用户名:</label>
+    	 		<input type="text" id="user" placeholder="请输入用户名" name="username">
+    	 	</p>
+    	 	<p class="row">
+   	 			<label for="password" >密 码:</label>
+   	 			<input type="password" id="password" placeholder="请输入用户名" name="password">
+   	 		</p>
+   	 		<P class="row ">
+   	 		<label for="yanzhengma" class="yanzhenma">验证码：</label>
+   	 		
+    			<input class="yan" type="text" id="yanzhengma" name="code">
+    			<img id="imgid" src="/Demo/c">
+    			<a href="#" onclick="run()" value="看不清">看不清</a>
+    		</p>
+    		
+   	 		
+    		<p class="row check" >
+    		<input type="submit" class="btn" value="登录"/>
+    		</p>
+    	</div>
+   	</fieldset>
+   	
+    </form>
+</main>
+ 
+</body>
+<script type="text/javascript">
+ 	
+ 		//时间挫
+ 		function run(){
+ 			var image=document.getElementById("imgid");
+ 			image.src="/Demo/c?"+new Date().getTime();
+ 			
+ 			
+ 		
+
+
+
+
+
+
+ 	}
+
+
+
+ </script>
+</html></html>

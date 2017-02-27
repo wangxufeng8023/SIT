@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="D:/Documents/Downloads/commons-codec-1.4.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Downloads/commons-httpclient-3.1.jar"/>
+	<classpathentry kind="lib" path="D:/Documents/Downloads/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/tomcats/lib/mysql-connector-java-5.1.36-bin.jar"/>
+	<classpathentry kind="lib" path="C:/tomcats/lib/servlet-api.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
